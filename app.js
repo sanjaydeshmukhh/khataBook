@@ -6,6 +6,7 @@ const path = require("path");
 const jwt = require("jsonwebtoken");
 
 const indexRouter = require("./routes/indexRouter")
+const User = require("./models/userModel");
 
 app.set("view engine", "ejs");
 
