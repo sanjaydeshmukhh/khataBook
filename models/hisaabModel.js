@@ -10,4 +10,4 @@ const hisaabModel = mongoose.Schema({
     passcode: Number
 })
 
-module.exoorts = mongoose.model("hisaab", hisaabModel)
+module.exports = mongoose.model("hisaab", hisaabModel)
