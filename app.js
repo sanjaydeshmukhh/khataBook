@@ -6,8 +6,10 @@ const path = require("path");
 const jwt = require("jsonwebtoken");
 
 const indexRouter = require("./routes/indexRouter")
+const db = require("./config/mongoose-connect")
 const User = require("./models/userModel");
 const hisaab = require("./models/hisaabModel")
+
 
 app.set("view engine", "ejs");
 

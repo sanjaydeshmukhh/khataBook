@@ -1,10 +1,14 @@
 const express = require("express")
 
-const indexController = {
-    index: (req, res) => {
-        res.send("Welcome to the Home Page!");
-    },
-    
-};
+function index(req, res) {
+    res.send("welcome to the home page")
+}
 
-module.exports = indexController;
+// const indexController = {
+//     index: (req, res) => {
+//         res.send("Welcome to the Home Page!");
+//     },
+    
+// };
+
+module.exports = index;
