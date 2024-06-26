@@ -23,6 +23,7 @@ const userModel = mongoose.Schema({
         required: [true, "Password is required"],
         minlength: 6,
         maxlength: 1024,
+        select: false,
     },
     hisaab: {
         type: mongoose.Schema.Types.ObjectId,
