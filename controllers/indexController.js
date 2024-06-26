@@ -1,8 +1,10 @@
 const express = require("express")
 
-function index(req, res) {
+module.exports.indexController = function(req, res){
     res.render("index")
 }
 
+module.exports.registerController = function(req, res){
+    res.render("register")
+}
 
-module.exports = index;
