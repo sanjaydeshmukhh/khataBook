@@ -25,10 +25,10 @@ const userModel = mongoose.Schema({
         maxlength: 1024,
         select: false,
     },
-    hisaab: {
-        type: mongoose.Schema.Types.ObjectId,
-        required: [true, "Hisaab ID is required"],
-    },
+    // hisaab: {
+    //     type: mongoose.Schema.Types.ObjectId,
+    //     required: [true, "Hisaab ID is required"],
+    // },
 });
 
 module.exports = mongoose.model("User", userModel);
