@@ -2,6 +2,7 @@ const jwt = require("jsonwebtoken");
 const userModel = require("../models/userModel");
 const bcrypt = require("bcrypt");
 
+
 module.exports.indexController = function (req, res) {
     res.render("index");
 };
@@ -64,4 +65,8 @@ module.exports.loginController = async function (req, res) {
 module.exports.logoutController = function (req, res) {
     res.cookie("token", "")
     return res.redirect("/")
+};
+
+module.exports.profileController = function (req, res) {
+    res.render("profile");
 };
