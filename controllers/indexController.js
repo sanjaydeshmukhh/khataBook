@@ -62,6 +62,6 @@ module.exports.loginController = async function (req, res) {
 }; 
 
 module.exports.logoutController = function (req, res) {
-    req.cookie("token", "")
+    res.cookie("token", "")
     return res.redirect("/")
 };

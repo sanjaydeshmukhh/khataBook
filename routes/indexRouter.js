@@ -4,7 +4,7 @@ const {indexController, registerController, registerPageController, loginControl
 
 router.get("/", indexController)
 router.get("/register", registerPageController)
-router.get("/logut", logoutController)
+router.get("/logout", logoutController)
 
 router.post("/register", registerController)
 router.post("/login", loginController)
